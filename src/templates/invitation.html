@@ -22,14 +22,18 @@ htmlClass: bg-gray-200 h-full
                     <td class="bg-white p-48 sm:px-24 text-center">
                       <p class="text-lg font-semibold m-0">Hey there,</p>
                       <raw>
-                        <p class="text-gray-700 text-base">You have been invited to create a user on {{ .SiteURL }}. Follow this link to accept the invite:</p>
+                        <p class="text-gray-700 text-base" style="line-height:1.4em">You have been added to a license in the Bryntum customer zone
+                          by %sender%. Please register
+                          <a href="https://customerzone.bryntum.com/#register">here</a> or click below log in and access
+                          your licensed products.
+                        </p>
                       </raw>
                       <div class="leading-24 sm:h-32">&zwnj;</div>
                       <a
-                        href="@{{ .ConfirmationURL }}"
+                        href="https://customerzone.bryntum.com/"
                         class="inline-block py-20 px-24 text-sm leading-none no-underline text-white font-semibold uppercase rounded bg-blue-500 hover:bg-blue-600">
                         <!--[if mso]><i style="letter-spacing: 24px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
-                          <span style="mso-text-raise: 13pt;">Accept the invite &rarr;</span>
+                        <span style="mso-text-raise: 13pt;">Go to Customer Zone &rarr;</span>
                         <!--[if mso]><i style="letter-spacing: 24px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
                       </a>
                     </td>
